@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Custom Soundboard</title>
-        <link rel = "Stylesheet" type = "text/css" ahref = "style.css">
-    </head>
-    <body>
+
+<head>
+    <title>Custom Soundboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="buttons">
+            <button class="btn btn-default"><span class="glyphicon glyphicon-record"></span> Rec</button>
+            
+            <button class="btn btn-default"><span class="glyphicon glyphicon-play-circle"></span> Play</button>
         
-    </body>
+             <button class="btn btn-default">Collaborate</button>
+             <button class="btn btn-default" type="button" data-toggle="modal" data-target="#share">Share</button>
+             
+             </div>
+                <table id="keymap"  class="table table-bordered" >
+                    
+                    <thead>
+                        <tr>
+                            <th>Sound clip</th>
+                            <th>Keys</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+
+        <div id="audio">
+
+        </div>
+        <ul id="keys">
+            <!--Keys that have already been bound-->
+        </ul>
+    </div>
+    <!--popup share box-->
+    <div id="share" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+
 </html>

@@ -1,0 +1,39 @@
+body {
+    background-color: #A9A9A9;
+}
+
+td:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+#keymap
+{
+    width: 70vw;
+}
+.buttons button{
+    background-color: #ff5895;
+    float:right;
+    color:red;
+    margin:20px;
+
+}
+
+.sound:hover
+{
+    background-color: white;
+    transition: .5s ;
+    cursor: pointer; 
+}
+
+
+    table {
+    border-collapse: collapse;
+}
+
+.binder:hover
+{
+     background-color: white;
+    transition: .5s ;
+    cursor: pointer; 
+}
