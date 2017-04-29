@@ -35,7 +35,7 @@ $("document").ready(() => {
         console.log(key);
         if (currentlyBinding === -1) {
             if (key.keyCode in soundBoard) playSound(soundBoard[key.keyCode]);
-            if (recording) song.push({"sound" : soundBoard[key.keyCode], "time":  new Date().now()});
+            if (recording) song.push({"sound" : soundBoard[key.keyCode], "time": Date.now()});
             return;
         }
         if(key.keyCode in soundBoard) return;
