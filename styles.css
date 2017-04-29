@@ -1,0 +1,58 @@
+body {
+    background-color: #A9A9A9;
+}
+
+td:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+#keymap
+{
+    width: 85%;
+}
+.buttons button{
+    background-color: white;
+    float:right;
+    color: purple;
+    margin:20px;
+
+}
+#record:hover {
+     background:red;   
+}
+
+.sound:hover
+{
+    background-color: #3399ff;
+    transition: .5s ;
+    cursor: pointer; 
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid blue;
+}
+
+.binder:hover
+{
+     background-color: white;
+    transition:all 0.5s;
+    cursor: pointer; 
+}
+#record.recording {
+    background-color: red;
+    
+}
+
+.container
+{
+    width: 100vh;
+    border-style: double;
+    border-width: 25px;
+}
+h1
+{
+    font-family: 'Rationale', sans-serif;
+}
