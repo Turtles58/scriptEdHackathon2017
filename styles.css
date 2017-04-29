@@ -1,7 +1,9 @@
 body {
     background-color: #A9A9A9;
-    background-image: url(bo_play_pattern.png);
+    /*background-image: url(images/bo_play_pattern.png);*/
+    background-image:  url(images/future.jpg);
     color: white;
+    font-family: 'Rationale', sans-serif;
 }
 
 td:hover {
@@ -21,7 +23,7 @@ td:hover {
 
 }
 .modarcl-body {
-    margin:60px;
+    margin: 60px 60px 60px 60px;
 }
 .sound:hover
 {
@@ -34,6 +36,7 @@ td:hover {
 table {
     border-collapse: collapse;
     border: 1px solid blue;
+    font-size: 18px;
 }
 
 .binder:hover
@@ -52,12 +55,17 @@ table {
     width: 100vh;
     border-style: double;
     border-width: 25px;
+    margin-top: 25px;
+    background: rgba(0,0,0,0.8);
 }
 h1
 {
     font-family: 'Rationale', sans-serif;
 }
-
+img { 
+    height: 100px;
+    width: 100px;
+}
 
 
 
