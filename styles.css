@@ -1,5 +1,7 @@
 body {
     background-color: #A9A9A9;
+    background-image: url(bo_play_pattern.png);
+    color: white;
 }
 
 td:hover {
@@ -12,16 +14,15 @@ td:hover {
     width: 85%;
 }
 .buttons button{
-    background-color: white;
+    background-color: #19ecc3;
     float:right;
     color: purple;
     margin:20px;
 
 }
-#record:hover {
-     background:red;   
+.modarcl-body {
+    margin:60px;
 }
-
 .sound:hover
 {
     background-color: #3399ff;
@@ -37,7 +38,7 @@ table {
 
 .binder:hover
 {
-     background-color: white;
+     background-color: blue;
     transition:all 0.5s;
     cursor: pointer; 
 }
@@ -56,3 +57,9 @@ h1
 {
     font-family: 'Rationale', sans-serif;
 }
+
+
+
+
+
+

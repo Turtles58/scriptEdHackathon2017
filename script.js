@@ -4,8 +4,7 @@ let lastBind = -1;
 let soundBoard = {};
 let recording = false;
 let song = [];
-let songTimes = [];
-let lastTime = 0;
+let recordTime = 0;
 
 $("document").ready(() => {
     sounds.forEach((soundName) => {
@@ -35,7 +34,7 @@ $("document").ready(() => {
         console.log(key);
         if (currentlyBinding === -1) {
             if (key.keyCode in soundBoard) playSound(soundBoard[key.keyCode]);
-            if (recording) song.push({"sound" : soundBoard[key.keyCode], "time": Date.now()});
+            if (recording) song.push({"sound" : soundBoard[key.keyCode], "time": Date.now() - recordTime});
             return;
         }
         if(key.keyCode in soundBoard) return;
@@ -56,10 +55,12 @@ $("document").ready(() => {
        recording = !recording;
        if (recording) song = [];
        $("#record").toggleClass("recording");
+       recordTime = Date.now();
     });
     
     $("#play").click(() =>{
-        lastTime = 0; 
-        song.forEach((sound) => {setInterval(sound["time"] - lastTime, playSound(sound["sound"])); lastTime = sound["time"];});
-        });
+        song.forEach((sound) => {setTimeout(() => 
+        {playSound(sound["sound"]); }
+        , sound["time"]); } );
+    });
 });
