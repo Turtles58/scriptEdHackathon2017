@@ -1,4 +1,4 @@
-# Custom Soundboard
+# Customizable Soundboard
 Spring 2017 ScriptEd hackathon
 ScriptEd hackathon project made by Noah, Jeremiah and Ray.
 

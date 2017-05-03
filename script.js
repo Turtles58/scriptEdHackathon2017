@@ -36,7 +36,7 @@ $("document").ready(() => {
             if (key.keyCode in soundBoard) playSound(soundBoard[key.keyCode]);
             if (recording) song.push({"sound" : soundBoard[key.keyCode], "time": Date.now() - recordTime});
             return;
-        }
+        }       
         if(key.keyCode in soundBoard) return;
         soundBoard[key.keyCode] = currentlyBinding;
         $(`#k${currentlyBinding}`).html(`Bound to ${key.key}`);
@@ -46,7 +46,7 @@ $("document").ready(() => {
     
     $(".binder").click((k) => {
         if(currentlyBinding != -1) return;
-        lastBind = $(`#${k.currentTarget.id}`).html();
+        if( $(`#${k.currentTarget.id}`).html() != "Click to bind")  delete soundBoard[ $(`#${k.currentTarget.id}`).html().charCodeAt(9)];
         $(`#${k.currentTarget.id}`).html("[Binding]");
         currentlyBinding = k.currentTarget.id.replace('k', '');
     });
